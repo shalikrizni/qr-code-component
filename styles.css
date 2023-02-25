@@ -1,0 +1,122 @@
+:root{
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+
+    --fm-outfit: 'Outfit', sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+
+}
+
+/*CSS Reset*/
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  h1, h2, h3 {
+    line-height: 1.2;
+  }
+
+/* General Styling */
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    --component-spacing: 5rem;
+    --component-padding: 1.5rem;
+
+
+    display: grid;
+    place-content: center;
+    margin: 2.5rem;
+
+
+    font-family: var(--fm-outfit);
+    font-size: 1.5rem;
+    background-color: var(--clr-light-gray);
+}
+
+.qr__code{
+    border-radius: 1.5rem;
+}
+
+.qr__component {
+    padding: var(--component-padding);
+    background-color: var(--clr-white);
+    border-radius: 1.5rem;
+}
+
+.qr__component-content{
+    padding-top: 2.5rem;
+}
+.heading {
+    text-align: center;
+    color: var(--clr-dark-blue);
+}
+
+p{
+    text-align: center;
+    color: var(--clr-grayish-blue);
+    padding: 2rem;
+}
+
+.attribution{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+@media (min-width: 380px) {
+    .qr__component {
+        width: 375px;
+    }
+}
